@@ -1,9 +1,9 @@
 import React from "react";
 
-export const ItemKeyComponent = ({myKey, state, handlerClick}) => {
+export const ItemKeyComponent = ({ myKey, state, handlerClick }) => {
     return (
         <div 
-          className={state ? ("disablediv"):("")}
+          className={state ? "disablediv":""}
           onClick={() => {
             handlerClick(myKey);
         }}>

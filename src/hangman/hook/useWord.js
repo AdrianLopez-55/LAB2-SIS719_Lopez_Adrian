@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const useWord = (word) => {
-    const listOfWords = ["hola", "rojo", "camisa", "hogera", "comida", "goku", "react"];
+    const listOfWords = ["puertorico"];
     word = listOfWords[Math.floor(Math.random() * listOfWords.length)];
     const listLetters = word.split("").map((item) => {
         item = item.toUpperCase();

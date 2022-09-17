@@ -7,7 +7,7 @@ import { useWord } from "./hook/useWord";
 import "./styles.css"
 
 export const HangManComponent = () => {
-    const [listWord, , ifContains, isValid] = useWord("breaking bad");
+    const [listWord, , ifContains, isValid] = useWord();
     const [counter,incrementCounter , ,] = useCounter(0, {max: 6, min: 0})
     const handlerClickPress = (key) => {
         ifContains(key);
